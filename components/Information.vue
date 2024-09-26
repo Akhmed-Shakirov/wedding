@@ -27,7 +27,7 @@
                                     <h4>Дата и время:</h4>
                                     <p>12.04.2024 ({{ data[active].date }})</p>
                                 </div>
-                                <img :src="data[active].img" alt="information">
+                                <!-- <img :src="data[active].img" alt="information"> -->
                             </div>
                         </div>
                     </template>
@@ -49,7 +49,7 @@
                     <h4>Дата и время:</h4>
                     <p>12.04.2024 ({{ data[active].date }})</p>
                 </div>
-                <img :src="data[active].img" alt="information">
+                <!-- <img :src="data[active].img" alt="information"> -->
             </div>
         </div>
     </section>

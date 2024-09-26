@@ -1,9 +1,9 @@
 <template>
     <section class="banquet container">
-        <div class="banquet__info">
+        <!-- <div class="banquet__info">
             <h2>Louvre Ball Room</h2>
             <p>Ресторан находится по адресу Розыбакиева 182а</p>
-        </div>
+        </div> -->
         <div class="banquet__images">
             <img src="/restik-1.png" alt="restik">
             <img src="/restik-2.png" alt="restik">
@@ -41,7 +41,6 @@
     }
 
     &__images {
-        margin-top: 70px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 80px;
@@ -79,11 +78,12 @@
         }
 
         &__images {
-            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
             gap: 40px;
 
             img {
-                width: 40%;
+                width: 100%;
             }
         }
     }
