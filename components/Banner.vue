@@ -1,9 +1,12 @@
 <template>
     <section class="banner container">
         <div class="banner__info">
-            <img src="/logo-2.svg" alt="logo">
+            <img src="/logo-2.svg" alt="logo" class="banner__logo">
             <h3>12 Октября 2024</h3>
-            <a href="https://2gis.kz/almaty/firm/70000001045593602?m=76.891737%2C43.229713%2F17.3%2Fr%2F-12.43">Розыбакиева 182а (Louvre)</a>
+            <a href="https://2gis.kz/almaty/firm/70000001045593602?m=76.891737%2C43.229713%2F17.3%2Fr%2F-12.43">
+                <img src="/2gis.svg" class="banner__2gis">
+                Розыбакиева 182а (Louvre)
+            </a>
         </div>
         <div class="banner__images">
             <img src="/banner-1.png" alt="banner">
@@ -30,10 +33,16 @@
         justify-content: center;
         gap: 16px;
         color: #19381F;
+    }
 
-        img {
-            width: 200px;
-        }
+    &__2gis {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+    }
+
+    &__logo {
+        width: 200px;
     }
 
     &__images {
@@ -79,6 +88,10 @@
         font-size: 42px;
         line-height: 46px;
         color: #19381F;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     @media (max-width: 1400px) {
@@ -134,6 +147,8 @@
         a {
             font-size: 32px;
             line-height: 32px;
+            flex-direction: column-reverse;
+            gap: 12px;
         }
 
         &__images {

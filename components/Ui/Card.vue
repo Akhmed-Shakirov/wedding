@@ -47,6 +47,10 @@ const props = defineProps<{
         span {
             font-size: 46px;
         }
+
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
     }
 }
 </style>

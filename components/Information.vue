@@ -6,11 +6,11 @@
 
                 <ul>
                     <template v-for="(item, index) in data" :key="item.name">
-                        <li :class="{ 'active': index == active }" @click="active = index">
+                        <li :class="{ 'active': index == active }">
                             {{ item.name }}
                             <p>{{ item.date }}</p>
                         </li>
-                        <div class="animation-flap" :class="{ 'animation-flap__show' : active == index }">
+                        <div class="animation-flap" :class="{ 'animation-flap__show' : active == index }" v-if="index == 0">
                             <div class="information__info-right mobail" :style="`padding: ${active == index ? 20 : 0}px`">
                                 <div>
                                     <h3>{{ data[active].name }}</h3>
@@ -124,11 +124,9 @@ const data = ref([
                     font-size: 32px;
                     border-bottom: 2px solid #F1F6EF;
                     margin-right: 40px;
-                    cursor: pointer;
-                    transition: .2s;
 
-                    &:hover {
-                        opacity: .7;
+                    &:last-child {
+                        border: none;
                     }
                 }
 
@@ -138,19 +136,10 @@ const data = ref([
                     background: #F1F6EF;
                     color: #19381F;
                     position: relative;
+                    border-radius: 12px 12px 0 0;
 
                     &:hover {
                         opacity: 1;
-                    }
-
-                    &::before {
-                        position: absolute;
-                        top: -2px;
-                        left: 0;
-                        width: 100%;
-                        height: 2px;
-                        background: #F1F6EF;
-                        content: '';
                     }
                 }
             }

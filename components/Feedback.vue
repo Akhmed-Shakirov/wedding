@@ -8,7 +8,10 @@
                 <p>Вы увидите меня на танцполе, когда заиграет <UiInput v-model="muzik" placeholder="Название песни" /></p>
             </template>
         </div>
-        <button :disabled="isLoading" @click="sendEmail">Отправить</button>
+        <button :disabled="isLoading" @click="sendEmail">
+            <UiIcon icon="loader" class="spin" v-if="isLoading" style="width: 22px; height: 22px;" />
+            {{ isLoading ? 'Отправка' : 'Отправить' }}
+        </button>
 
         <!-- <p v-if="isGood">Заявка отправлена!</p> -->
     </section>
@@ -110,6 +113,21 @@ const sendEmail = async () => {
         border-radius: 35px;
         padding: 14px 45px;
         font-family: Poppins;
+        border: none;
+
+        &:disabled {
+            opacity: .6;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        i {
+            width: 22px;
+            height: 22px;
+        }
     }
 
     &__info {

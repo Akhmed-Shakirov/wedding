@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <img src="/logo.svg" alt="logo">
+        <img src="/logo.png" alt="logo">
     </footer>
 </template>
 
@@ -11,5 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    img {
+        width: 94px;
+        height: 94px;
+    }
 }
 </style>

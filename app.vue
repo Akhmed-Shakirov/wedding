@@ -16,6 +16,8 @@
     </main>
 
     <Footer />
+
+    <UiMusic />
 </template>
 
 <script setup lang="ts">
