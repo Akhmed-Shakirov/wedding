@@ -240,7 +240,7 @@ const data = ref([
 
                 h3 {
                     font-size: 45px;
-                    margin-bottom: 50px;
+                    margin-bottom: 25px;
                 }
 
                 ul {

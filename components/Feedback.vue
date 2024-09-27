@@ -29,10 +29,10 @@ const turnoutes = ref([
 ])
 
 
-const withs = ref('с супругой')
+const withs = ref('с супругом/супругой')
 const withes = ref([
-    { name: 'с супругой', value: 'с супругой' },
-    { name: 'один', value: 'один' },
+    { name: 'с супругом/супругой', value: 'с супругом/супругой' },
+    { name: 'один/одна', value: 'один/одна' },
 ])
 
 
