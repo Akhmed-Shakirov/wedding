@@ -25,7 +25,7 @@
                                     <p>Розыбакиева 182а (Louvre)</p>
                                     <br>
                                     <h4>Дата и время:</h4>
-                                    <p>12.04.2024 ({{ data[active].date }})</p>
+                                    <p>12.10.2024 ({{ data[active].date }})</p>
                                 </div>
                                 <!-- <img :src="data[active].img" alt="information"> -->
                             </div>
@@ -47,7 +47,7 @@
                     <p>Розыбакиева 182а (Louvre)</p>
                     <br>
                     <h4>Дата и время:</h4>
-                    <p>12.04.2024 ({{ data[active].date }})</p>
+                    <p>12.10.2024 ({{ data[active].date }})</p>
                 </div>
                 <!-- <img :src="data[active].img" alt="information"> -->
             </div>
